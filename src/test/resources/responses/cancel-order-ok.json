@@ -1,0 +1,15 @@
+{
+  "id": "11e7ab3e-a61e-9f14-9ca9-02429735e3c2",
+  "type": 0,
+  "timestamp": 1507367122,
+  "currencyPair": {
+    "base": "ltc",
+    "counter": "btc"
+  },
+  "price": 1,
+  "baseAmount": 0.4,
+  "counterAmount": 0.4,
+  "originalBaseAmount": 0.7,
+  "originalCounterAmount": 0.7,
+  "status": 1
+}

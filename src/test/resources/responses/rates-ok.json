@@ -1,0 +1,16 @@
+[
+  {
+    "currencyPair": {
+      "base": "vtc",
+      "counter": "btc"
+    },
+    "rate": 0.00031
+  },
+  {
+    "currencyPair": {
+      "base": "ltc",
+      "counter": "btc"
+    },
+    "rate": 0.0115
+  }
+]

@@ -1,0 +1,28 @@
+image: $CI_REGISTRY/docker/maven-coingi:master
+
+stages:
+ - build
+ - publish
+
+before_script:
+ - env
+
+build_snapshot:
+  stage: build
+  only:
+    - master
+  except:
+    - tags
+  tags:
+    - docker
+  script:
+    - mvn -B deploy $COINGI_MAVEN_DEPLOY_PARAMETER
+
+build_release:
+  stage: build
+  only:
+    - tags
+  tags:
+    - docker
+  script:
+    - mvn -B deploy -P release $COINGI_MAVEN_DEPLOY_PARAMETER

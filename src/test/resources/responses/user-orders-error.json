@@ -1,0 +1,12 @@
+{
+  "errors": [
+    {
+      "code": 100300002,
+      "message": "Invalid value for parameter \"pageNumber\". Expected range between 1 and 100, found \"32767\"."
+    },
+    {
+      "code": 100300012,
+      "message": "Invalid value for parameter \"pageSize\". Expected range between 1 and 100, found \"32767\"."
+    }
+  ]
+}

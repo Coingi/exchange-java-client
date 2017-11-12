@@ -1,0 +1,28 @@
+[
+  {
+    "currencyPair": {
+      "base": "doge",
+      "counter": "btc"
+    },
+    "last": 6.7e-7,
+    "lowestAsk": 6.8e-7,
+    "highestBid": 6.7e-7,
+    "baseVolume": 103114,
+    "counterVolume": 0.06934318,
+    "high": 6.8e-7,
+    "low": 6.7e-7
+  },
+  {
+    "currencyPair": {
+      "base": "ltc",
+      "counter": "btc"
+    },
+    "last": 0.01612,
+    "lowestAsk": 0.01998,
+    "highestBid": 0.01607,
+    "baseVolume": 602.123,
+    "counterVolume": 9.66881908,
+    "high": 0.0166,
+    "low": 0.01562
+  }
+]

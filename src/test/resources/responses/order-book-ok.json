@@ -1,0 +1,66 @@
+{
+  "asks": [
+    {
+      "type": 1,
+      "currencyPair": {
+        "base": "ltc",
+        "counter": "btc"
+      },
+      "price": 0.017,
+      "baseAmount": 32.501,
+      "counterAmount": 0.552517
+    },
+    {
+      "type": 1,
+      "currencyPair": {
+        "base": "ltc",
+        "counter": "btc"
+      },
+      "price": 0.01998,
+      "baseAmount": 0.023,
+      "counterAmount": 0.00045954
+    }
+  ],
+  "bids": [
+    {
+      "type": 0,
+      "currencyPair": {
+        "base": "ltc",
+        "counter": "btc"
+      },
+      "price": 0.01681,
+      "baseAmount": 29.22,
+      "counterAmount": 0.4911882
+    },
+    {
+      "type": 0,
+      "currencyPair": {
+        "base": "ltc",
+        "counter": "btc"
+      },
+      "price": 0.0167,
+      "baseAmount": 12.85,
+      "counterAmount": 0.214595
+    }
+  ],
+  "askDepthRange": [
+    {
+      "price": 0.017,
+      "amount": 32.501
+    },
+    {
+      "price": 0.0195,
+      "amount": 32.524
+    }
+  ],
+  "bidDepthRange": [
+    {
+      "price": 0.0165,
+      "amount": 42.07
+    },
+    {
+      "price": 0.016,
+      "amount": 46.62
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "currency": {
+      "name": "btc",
+      "crypto": true
+    },
+    "available": 34,
+    "inOrders": 9.65,
+    "deposited": 0,
+    "withdrawing": 0.1,
+    "blocked": 0
+  },
+  {
+    "currency": {
+      "name": "ltc",
+      "crypto": true
+    },
+    "available": 6.8,
+    "inOrders": 3.2,
+    "deposited": 0,
+    "withdrawing": 0,
+    "blocked": 0
+  }
+]

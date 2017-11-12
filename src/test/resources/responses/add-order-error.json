@@ -1,0 +1,24 @@
+{
+  "errors": [
+    {
+      "code": 100130005,
+      "message": "Parameter \"token\" value is missing. Expecting token/API key."
+    },
+    {
+      "code": 100100001,
+      "message": "Parameter \"currencyPair\" value is missing. Expecting currency pair definition."
+    },
+    {
+      "code": 100100011,
+      "message": "Parameter \"type\" value is missing. Expecting integer."
+    },
+    {
+      "code": 100100021,
+      "message": "Parameter \"volume\" value is missing. Expecting floating point number."
+    },
+    {
+      "code": 100100031,
+      "message": "Parameter \"price\" value is missing. Expecting floating point number."
+    }
+  ]
+}

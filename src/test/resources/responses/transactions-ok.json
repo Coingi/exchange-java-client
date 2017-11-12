@@ -1,0 +1,24 @@
+[
+  {
+    "id": "11e737e9-b60e-8240-b34a-0059bb86f406",
+    "timestamp": 1494686258000,
+    "currencyPair": {
+      "base": "ltc",
+      "counter": "btc"
+    },
+    "amount": 15.876,
+    "price": 0.01612,
+    "type": 0
+  },
+  {
+    "id": "11e737e7-c423-82ba-86d2-0059bb86f406",
+    "timestamp": 1494685423000,
+    "currencyPair": {
+      "base": "ltc",
+      "counter": "btc"
+    },
+    "amount": 5.94,
+    "price": 0.01614,
+    "type": 0
+  }
+]
