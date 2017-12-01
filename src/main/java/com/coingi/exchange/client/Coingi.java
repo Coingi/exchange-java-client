@@ -580,7 +580,7 @@ public class Coingi {
 		private List<Error> errors;
 
 		List<Error> getErrors() {
-			return errors == null ? Collections.EMPTY_LIST : Collections.unmodifiableList(errors);
+			return errors == null ? Collections.emptyList() : Collections.unmodifiableList(errors);
 		}
 
 	}
