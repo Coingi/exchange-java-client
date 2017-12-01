@@ -1,11 +1,14 @@
 image: $CI_REGISTRY/docker/maven-coingi:master
 
 stages:
- - build
- - publish
+  - build
 
-before_script:
- - env
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+
+cache:
+  paths:
+    - .m2/repository
 
 build_snapshot:
   stage: build
