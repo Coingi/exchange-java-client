@@ -12,9 +12,10 @@ public enum Currency {
 	PPC("ppc", true),
 	DOGE("doge", true),
 	VTC("vtc", true),
-	FTC("ftc", true),
 	NMC("nmc", true),
-	DASH("dash", true);
+	DASH("dash", true),
+	USD("usd", false),
+	EUR("eur", false);
 
 	public final String identifier;
 
@@ -46,12 +47,14 @@ public enum Currency {
 				return DOGE;
 			case "vtc":
 				return VTC;
-			case "ftc":
-				return FTC;
 			case "nmc":
 				return NMC;
 			case "dash":
 				return DASH;
+			case "usd":
+				return USD;
+			case "eur":
+				return EUR;
 			default:
 				throw new IllegalArgumentException(String.format("Invalid currency type '%s'.", value));
 		}

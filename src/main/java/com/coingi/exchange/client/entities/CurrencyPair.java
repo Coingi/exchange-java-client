@@ -18,13 +18,27 @@ public class CurrencyPair {
 
 	public final static CurrencyPair VTC_BTC = new CurrencyPair(Currency.VTC, Currency.BTC);
 
-	public final static CurrencyPair FTC_BTC = new CurrencyPair(Currency.FTC, Currency.BTC);
-
 	public final static CurrencyPair NMC_BTC = new CurrencyPair(Currency.NMC, Currency.BTC);
 
 	public final static CurrencyPair DASH_BTC = new CurrencyPair(Currency.DASH, Currency.BTC);
 
-	public final static Collection<CurrencyPair> SUPPORTED_CURRENCY_PAIRS = Collections.unmodifiableList(Arrays.asList(LTC_BTC, PPC_BTC, DOGE_BTC, VTC_BTC, FTC_BTC, NMC_BTC, DASH_BTC));
+	public final static CurrencyPair BTC_USD = new CurrencyPair(Currency.BTC, Currency.USD);
+
+	public final static CurrencyPair BTC_EUR = new CurrencyPair(Currency.BTC, Currency.EUR);
+
+	public final static CurrencyPair LTC_USD = new CurrencyPair(Currency.LTC, Currency.USD);
+
+	public final static CurrencyPair LTC_EUR = new CurrencyPair(Currency.LTC, Currency.EUR);
+
+	public final static CurrencyPair PPC_USD = new CurrencyPair(Currency.PPC, Currency.USD);
+
+	public final static CurrencyPair PPC_EUR = new CurrencyPair(Currency.PPC, Currency.EUR);
+
+	public final static CurrencyPair DOGE_USD = new CurrencyPair(Currency.DOGE, Currency.USD);
+
+	public final static CurrencyPair EUR_USD = new CurrencyPair(Currency.EUR, Currency.USD);
+
+	public final static Collection<CurrencyPair> SUPPORTED_CURRENCY_PAIRS = Collections.unmodifiableList(Arrays.asList(BTC_USD, BTC_EUR, LTC_USD, LTC_EUR, PPC_USD, PPC_EUR, DOGE_USD, EUR_USD, LTC_BTC, PPC_BTC, DOGE_BTC, VTC_BTC, NMC_BTC, DASH_BTC));
 
 	private String base;
 

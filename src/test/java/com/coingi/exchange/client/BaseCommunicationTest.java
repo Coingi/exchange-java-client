@@ -60,7 +60,7 @@ public abstract class BaseCommunicationTest {
 
 		{
 			final Map<String, String> expectedParameters = new HashMap<>();
-			expectedParameters.put("currencies", Currency.BTC.identifier + "," + Currency.LTC.identifier + "," + Currency.PPC.identifier + "," + Currency.DOGE.identifier + "," + Currency.VTC.identifier + "," + Currency.FTC.identifier + "," + Currency.NMC.identifier + "," + Currency.DASH.identifier);
+			expectedParameters.put("currencies", Currency.BTC.identifier + "," + Currency.LTC.identifier + "," + Currency.PPC.identifier + "," + Currency.DOGE.identifier + "," + Currency.VTC.identifier + "," + Currency.NMC.identifier + "," + Currency.DASH.identifier + "," + Currency.USD.identifier + "," + Currency.EUR.identifier);
 
 			data.add(Arrays.asList(
 					"https://api.coingi.com/user/balance",
