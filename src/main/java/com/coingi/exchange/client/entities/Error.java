@@ -41,4 +41,9 @@ public class Error {
 		return Objects.hash(code, message);
 	}
 
+	@Override
+	public String toString() {
+		return String.format("Error{%d: %s}", code, message);
+	}
+
 }
