@@ -208,6 +208,21 @@ public abstract class BaseCommunicationTest {
 			));
 		}
 
+		{
+
+			final Map<String, String> expectedParameters = new HashMap<>();
+			expectedParameters.put("orderId", "11e7f916-255d-28c0-b795-0059bb86f63e");
+
+			data.add(Arrays.asList(
+					"https://api.coingi.com/user/get-order",
+					"user-order-ok",
+					(Function<Coingi, Order>) coingi -> coingi.getOrder(UUID.fromString("11e7f916-255d-28c0-b795-0059bb86f63e")),
+					expectedParameters,
+					ResponsesProvider.getExpectedOrder()
+			));
+
+		}
+
 		return data;
 	}
 
@@ -281,6 +296,11 @@ public abstract class BaseCommunicationTest {
 						"user-orders-error",
 						(Function<Coingi, OrdersList>) coingi -> coingi.getOrders(1, 1),
 						ResponsesProvider.getExpectedGetOrdersException()
+				},
+				{
+						"user-order-error",
+						(Function<Coingi, Order>) coingi -> coingi.getOrder(UUID.randomUUID()),
+						ResponsesProvider.getExpectedGetOrderException()
 				},
 		};
 	}

@@ -256,6 +256,30 @@ class ResponsesProvider {
 		);
 	}
 
+	static Order getExpectedOrder() {
+		return new Order(
+				UUID.fromString("11e7ab3e-a553-aaac-bab6-02429735e3c2"),
+				OrderType.BID,
+				1507367121000L,
+				CurrencyPair.LTC_BTC,
+				BigDecimal.valueOf(1, 0),
+				BigDecimal.valueOf(7, 1),
+				BigDecimal.valueOf(7, 1),
+				BigDecimal.valueOf(7, 1),
+				BigDecimal.valueOf(7, 1),
+				OrderStatus.ACTIVE
+		);
+	}
+
+	static ApiCallException getExpectedGetOrderException() {
+		return new ApiCallException(
+				400,
+				Collections.singletonList(
+						new Error(100520002, "Order does not exist.")
+				)
+		);
+	}
+
 	static Coingi.Response loadResponse(int status, String name) throws IOException {
 		return new Coingi.Response(status, loadResponse(name));
 	}

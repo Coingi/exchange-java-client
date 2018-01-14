@@ -216,6 +216,19 @@ public class Coingi {
 	}
 
 	/**
+	 * Returns order details.
+	 *
+	 * @param id Order ID
+	 * @return Order description
+	 */
+	public Order getOrder(UUID id) {
+		final Map<String, Object> parameters = new HashMap<>();
+		parameters.put("orderId", Objects.requireNonNull(id));
+
+		return callUserFunction("get-order", Order.class, parameters);
+	}
+
+	/**
 	 * Returns a collection of user orders.
 	 *
 	 * @param page     Page number
