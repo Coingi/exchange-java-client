@@ -1,10 +1,25 @@
 image: $CI_REGISTRY/docker/maven-coingi:master
 
 stages:
+  - test
   - build
 
 variables:
   MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+
+test_junit:
+  stage: test
+  cache:
+    key: test_junit
+    paths:
+      - .m2/repository
+  except:
+    - master
+    - tags
+  tags:
+    - docker
+  script:
+    - mvn -B test
 
 build_snapshot:
   stage: build
