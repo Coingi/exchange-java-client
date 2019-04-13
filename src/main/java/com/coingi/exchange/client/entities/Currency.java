@@ -15,7 +15,8 @@ public enum Currency {
 	NMC("nmc", true),
 	DASH("dash", true),
 	USD("usd", false),
-	EUR("eur", false);
+	EUR("eur", false),
+	CZK("czk", false);
 
 	public final String identifier;
 
@@ -55,6 +56,8 @@ public enum Currency {
 				return USD;
 			case "eur":
 				return EUR;
+			case "czk":
+				return CZK;
 			default:
 				throw new IllegalArgumentException(String.format("Invalid currency type '%s'.", value));
 		}

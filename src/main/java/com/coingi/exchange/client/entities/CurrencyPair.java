@@ -38,7 +38,9 @@ public class CurrencyPair {
 
 	public final static CurrencyPair EUR_USD = new CurrencyPair(Currency.EUR, Currency.USD);
 
-	public final static Collection<CurrencyPair> SUPPORTED_CURRENCY_PAIRS = Collections.unmodifiableList(Arrays.asList(BTC_USD, BTC_EUR, LTC_USD, LTC_EUR, PPC_USD, PPC_EUR, DOGE_USD, EUR_USD, LTC_BTC, PPC_BTC, DOGE_BTC, VTC_BTC, NMC_BTC, DASH_BTC));
+	public final static CurrencyPair BTC_CZK = new CurrencyPair(Currency.BTC, Currency.CZK);
+
+	public final static Collection<CurrencyPair> SUPPORTED_CURRENCY_PAIRS = Collections.unmodifiableList(Arrays.asList(BTC_USD, BTC_EUR, LTC_USD, LTC_EUR, PPC_USD, PPC_EUR, DOGE_USD, EUR_USD, LTC_BTC, PPC_BTC, DOGE_BTC, VTC_BTC, NMC_BTC, DASH_BTC, BTC_CZK));
 
 	private String base;
 
